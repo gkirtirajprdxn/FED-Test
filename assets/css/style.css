@@ -217,3 +217,13 @@ h1 {
   transition: all 0.3 ease;
   -webkit-transition: all 0.3 ease;
 }
+
+.form #button:hover,
+.form #button:active,
+.form #button:focus { background: #43A047; }
+
+#errormsg {
+  display: none;
+  color: red;
+  font-size: 12px;
+}
