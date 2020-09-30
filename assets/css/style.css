@@ -202,3 +202,18 @@ h1 {
   font-size: 14px;
   outline: 0;
 }
+
+.form #button {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  background: #4CAF50;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  outline: 0;
+  text-transform: uppercase;
+  transition: all 0.3 ease;
+  -webkit-transition: all 0.3 ease;
+}
