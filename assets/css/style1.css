@@ -184,7 +184,7 @@ header {
   background: #3B013E;
 }
 
-/*logo*/
+/* logo */
 .logo { display: inline-block; }
 
 .logo h1 { font-size: 32px; }
@@ -197,27 +197,36 @@ header {
   margin-bottom: -4px;
 }
 
-/*nav*/
-  nav {
-    padding: 33px 0;
-    display: inline-block;
-    float: right;
-  }
+/* nav */
+nav {
+  padding: 33px 0;
+  display: inline-block;
+  float: right;
+}
 
-  nav li {
-    padding: 10px 15px;
-    display: inline-block;
-  }
+nav li {
+  padding: 10px 15px;
+  display: inline-block;
+}
 
-  nav a {
-    padding: 55px 10px;
-    color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
- 
-  nav a:hover,
-  .active {
-    background-color: #fff;
-    color: #3B013E;
-  }
+nav a {
+  padding: 55px 10px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav a:hover,
+.active {
+  background-color: #fff;
+  color: #3B013E;
+}
+
+
+/* banner */
+.banner { position: relative; }
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
