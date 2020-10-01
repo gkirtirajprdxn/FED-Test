@@ -298,3 +298,25 @@ footer a {
 .social{ padding: 20px 0; }
 
 .social a:hover { border-radius: 50%; }
+
+.foot{
+  border-top: 2px solid #fff;
+  font-size: 16px;
+}
+
+.foot p{
+  padding: 20px 0;
+  display: inline-block;
+  color: #fff;
+}
+
+.policy {
+  padding: 18px 0px;
+  float: right;
+}
+
+.policy a{
+  color: #fff;
+  font-size: 16px;
+}
+
