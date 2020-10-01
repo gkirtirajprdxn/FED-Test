@@ -196,3 +196,28 @@ header {
   height: 110px;
   margin-bottom: -4px;
 }
+
+/*nav*/
+  nav {
+    padding: 33px 0;
+    display: inline-block;
+    float: right;
+  }
+
+  nav li {
+    padding: 10px 15px;
+    display: inline-block;
+  }
+
+  nav a {
+    padding: 55px 10px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+ 
+  nav a:hover,
+  .active {
+    background-color: #fff;
+    color: #3B013E;
+  }
