@@ -230,3 +230,21 @@ nav a:hover,
   width: 100%;
   height: auto;
 }
+
+/* banner text */
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.main-text h2 {
+  padding: 30px 0;
+  font-size: 30px;
+}
+
+.main-text p { font-size: 18px; }
+
