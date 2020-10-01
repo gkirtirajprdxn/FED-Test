@@ -271,3 +271,10 @@ nav a:hover,
 /* Footer */
 footer { background-color: #3B013E; }
 
+footer li{ padding: 10px 0; }
+
+footer a{
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+}
