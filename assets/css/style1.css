@@ -267,7 +267,10 @@ nav a:hover,
   font-size: 18px;
 }
 
-.info p span { color: #35003b; }
+.info p span { 
+  color: #35003b;
+  font-weight: 600;
+ }
 
 
 /* Footer */
