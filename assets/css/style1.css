@@ -183,3 +183,16 @@ header {
   margin-bottom: -1px;
   background: #3B013E;
 }
+
+/*logo*/
+.logo { display: inline-block; }
+
+.logo h1 { font-size: 32px; }
+
+.logo a { color: #fff; }
+
+.logo img {
+  width: 220px;
+  height: 110px;
+  margin-bottom: -4px;
+}
