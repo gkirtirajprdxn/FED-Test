@@ -177,3 +177,9 @@ li { list-style: none; }
   width: 92.13%;
   margin: 0 auto;
 }
+
+/* header */
+header {
+  margin-bottom: -1px;
+  background: #3B013E;
+}
