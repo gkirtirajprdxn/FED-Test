@@ -359,3 +359,58 @@ nav a:hover,
 
 /* Info Section End */
 
+/* Footer Start */
+
+/* Footer */
+footer { background-color: #3B013E; }
+
+footer li { padding: 10px 0; }
+
+footer a {
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.ftop { padding: 60px 0; }
+
+.flogo, 
+.navs {
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.navs a:hover{
+  padding: 10px;
+  background: #fff;
+  color: #3B013E;
+}
+
+.social{ padding: 20px 0; }
+
+.social a:hover { border-radius: 50%; }
+
+.foot{
+  border-top: 2px solid #fff;
+  font-size: 16px;
+}
+
+.foot p{
+  padding: 20px 0;
+  display: inline-block;
+  color: #fff;
+}
+
+.policy {
+  padding: 18px 0px;
+  float: right;
+}
+
+.policy a{
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Footer End */
