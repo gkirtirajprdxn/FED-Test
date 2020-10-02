@@ -332,3 +332,30 @@ nav a:hover,
 .main-text p { font-size: 18px; }
 
 /* Banner End */
+
+/* Info Section Start */
+
+/* info section */
+.info { padding: 60px 0; }
+
+.info h3 {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px solid #3B013E;
+  color: #3B013E;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.info p {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.info p span { 
+  color: #35003b;
+  font-weight: 600;
+ }
+
+/* Info Section End */
+
