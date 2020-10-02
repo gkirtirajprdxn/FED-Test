@@ -376,22 +376,22 @@ footer a {
   vertical-align: top;
 }
 
-.navs a:hover{
+.navs a:hover {
   padding: 10px;
   background: #fff;
   color: #3B013E;
 }
 
-.social{ padding: 20px 0; }
+.social { padding: 20px 0; }
 
 .social a:hover { border-radius: 50%; }
 
-.foot{
+.foot {
   border-top: 2px solid #fff;
   font-size: 16px;
 }
 
-.foot p{
+.foot p {
   padding: 20px 0;
   display: inline-block;
   color: #fff;
@@ -402,7 +402,7 @@ footer a {
   float: right;
 }
 
-.policy a{
+.policy a {
   color: #fff;
   font-size: 16px;
 }
