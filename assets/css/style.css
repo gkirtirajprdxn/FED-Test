@@ -157,11 +157,39 @@ sub { bottom: -.25em; }
   font-weight: bold;
 }
 
+/* universal */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 /* body */
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
+}
+
+a { text-decoration: none; }
+
+li { list-style: none; }
+
+/* wrapper */
+.wrapper {
+  max-width: 1400px;
+  width: 92.13%;
+  margin: 0 auto;
+}
+
+/* Login Start */
+
+/* login-page */
+.login-page {
+  width: 100%;
+  padding: 8% 0;
+  margin: auto;
+  background: #3B013E;
 }
 
 .login-page h1 {
@@ -171,18 +199,7 @@ body {
   text-align: center;
 }
 
-.form h2 {
-  padding: 15px;
-  font-size: 24px;
-}
-
-.login-page {
-  width: 100%;
-  padding: 8% 0;
-  margin: auto;
-  background: #3B013E;
-}
-
+/* form */
 .form {
   max-width: 300px;
   padding: 45px;
@@ -192,6 +209,11 @@ body {
   background: #FFFFFF;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   text-align: center;
+}
+
+.form h2 {
+  padding: 15px;
+  font-size: 24px;
 }
 
 .form input {
@@ -230,3 +252,53 @@ body {
   color: red;
   font-size: 12px;
 }
+
+/* Login End */
+
+/* Header Start */
+
+/* header */
+header {
+  margin-bottom: -1px;
+  background: #3B013E;
+}
+
+/* logo */
+.logo { display: inline-block; }
+
+.logo h1 { font-size: 32px; }
+
+.logo a { color: #fff; }
+
+.logo img {
+  width: 220px;
+  height: 110px;
+  margin-bottom: -4px;
+}
+
+/* nav */
+nav {
+  padding: 33px 0;
+  display: inline-block;
+  float: right;
+}
+
+nav li {
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+nav a {
+  padding: 55px 10px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav a:hover,
+.active {
+  background-color: #fff;
+  color: #3B013E;
+}
+
+/* Header End */
