@@ -165,11 +165,7 @@ sub { bottom: -.25em; }
 }
 
 /* body */
-body {
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
-}
+body { font-family: "Roboto", sans-serif; }
 
 a { text-decoration: none; }
 
@@ -239,8 +235,6 @@ li { list-style: none; }
   font-size: 14px;
   outline: 0;
   text-transform: uppercase;
-  transition: all 0.3 ease;
-  -webkit-transition: all 0.3 ease;
 }
 
 .form #button:hover,
