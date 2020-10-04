@@ -87,6 +87,8 @@ var output = document.getElementById('output');
 var display = document.getElementById('display');
 var load = document.getElementById('load');
 var eventFire = false;
+var matchweek = []; 
+
 
 // fetch club data
 fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2015-16/en.1.clubs.json')
@@ -108,6 +110,33 @@ fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2019-
 .then((data) => {
 	// fetched matches data into matches array
 	matches = data.matches;
+
+	// matchweek-js
+	// Count variable is used to add the new unique value only once in the matchweek array. 
+  var count = 0; 
+    
+  // Start variable is used to set true if a repeated duplicate value is encontered in the matchweek array. 
+  var start = false; 
+    
+  for (var i = 0; i < matches.length; i++) { 
+    for (var j = 0; j < matchweek.length; j++) { 
+      if ( matches[i].round == matchweek[j] ) { 
+        start = true; 
+      } 
+    } 
+    count++; 
+    if (count == 1 && start == false) { 
+      matchweek.push(matches[i].round); 
+    } 
+    start = false; 
+    count = 0; 
+  } 
+
+  // select options value/populate select options
+	for (var k=0; k<matchweek.length; k++){
+		selectClub.innerHTML += '<option value="' + k + '">' + matchweek[k] + '</option>';
+	}
+	
 });
 
 // change event on select element
@@ -294,6 +323,12 @@ function onloadmore() {
 	index += 5;
   len += 5;
 }
+
+// Club List End
+
+// Matchweek Start
+
+var selectMatch = document.getElementById('select-match');
 
 
 
