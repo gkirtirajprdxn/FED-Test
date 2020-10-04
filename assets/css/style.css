@@ -354,6 +354,12 @@ nav a:hover,
 /* Info Section End */
 
 /* Club List Start */
+.clubs {
+  width: 100%;
+  padding: 8% 0px;
+  margin: auto;
+}
+
 #select-club {
   max-width: 300px;
   width: 1000px;
