@@ -437,6 +437,11 @@ nav a:hover,
   margin: 0 auto;
 }
 
+.result h3 {
+  padding: 20px 0;
+  color: #363636;
+}
+
 /* Matchweek End */
 
 /* Footer Start */
