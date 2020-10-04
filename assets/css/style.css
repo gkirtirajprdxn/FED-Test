@@ -427,6 +427,18 @@ nav a:hover,
 
 /* Club List End */
 
+/* Matchweek Start */
+
+#mdisplay h1 {
+  width: 75%;
+  background: #dd1515;
+  padding: 15px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+/* Matchweek End */
+
 /* Footer Start */
 
 /* Footer */
