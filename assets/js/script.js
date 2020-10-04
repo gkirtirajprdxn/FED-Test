@@ -99,14 +99,12 @@ fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2015-
 	// fetched club data into clubs array
 	clubs = data.clubs;
 
-	if (window.location.pathname != '/C:/Users/Kirtiraj/Desktop/PRDXN%20training/Javascript/EPL%20Football/clublist.html') {
+	if (selectClub != null) {
 		// populate select options
-		clubs.forEach(function(club){
-	    selectClub.innerHTML += '<option value="' + club['code'] + '">' + club['name'] + '</option>';
+		clubs.forEach(function(club) {
+	    	selectClub.innerHTML += '<option value="' + club['code'] + '">' + club['name'] + '</option>';
 		});
-		// change event on select element
-		selectClub.addEventListener('change', show);
-	}
+  }
 
 });
 
@@ -138,13 +136,19 @@ fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2019-
     count = 0; 
   } 
 
-  // select options value/populate select options
-	for (var k=0; k<matchweek.length; k++){
-		selectMatch.innerHTML += '<option value="' + k + '">' + matchweek[k] + '</option>';
+  if (selectMatch != null) {
+	  // select options value/populate select options
+		for (var k=0; k<matchweek.length; k++){
+			selectMatch.innerHTML += '<option value="' + k + '">' + matchweek[k] + '</option>';
+		}
 	}
 
 });
 
+if (selectClub != null) {
+	// change event on select element
+	selectClub.addEventListener('change', show);
+}
 
 // show function to display 5 results of match
 function show() {
@@ -337,8 +341,10 @@ var moutput = document.getElementById('moutput');
 var mdisplay = document.getElementById('mdisplay');
 var mainresult = [];
 
-// change event on select element
-selectMatch.addEventListener('change', mshow);
+if(selectMatch != null){
+	// change event on select element
+	selectMatch.addEventListener('change', mshow);
+}
 
 function mshow() {
 
