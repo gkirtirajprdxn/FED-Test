@@ -75,9 +75,32 @@ if (window.location.pathname != '/C:/Users/Kirtiraj/Desktop/PRDXN%20training/Jav
 
 // Index End
 
+// Club List Start
 
+var clubs;
+var matches;
 
+// fetch club data
+fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2015-16/en.1.clubs.json')
+.then((res) => res.json())
+.then((data) => {
+	// fetched club data into clubs array
+	clubs = data.clubs;
 
+	// populate select options
+	clubs.forEach(function(club){
+    selectClub.innerHTML += '<option value="' + club['code'] + '">' + club['name'] + '</option>';
+	});
+
+});
+
+// fetch match data
+fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2019-20/en.1.json')
+.then((res) => res.json())
+.then((data) => {
+	// fetched matches data into matches array
+	matches = data.matches;
+});
 
 
 
