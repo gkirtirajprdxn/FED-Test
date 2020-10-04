@@ -391,7 +391,10 @@ nav a:hover,
 /* Footer Start */
 
 /* Footer */
-footer { background-color: #3B013E; }
+footer { 
+  margin-top: 8%;
+  background-color: #3B013E; 
+}
 
 footer li { padding: 10px 0; }
 
