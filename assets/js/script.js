@@ -86,6 +86,7 @@ var len = 5;
 var output = document.getElementById('output');
 var display = document.getElementById('display');
 var load = document.getElementById('load');
+var eventFire = false;
 
 // fetch club data
 fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2015-16/en.1.clubs.json')
@@ -268,6 +269,32 @@ function show() {
 	document.getElementById('load').appendChild(btn);
 
 }
+
+// load more button function
+function onloadmore() {
+	eventFire = true;
+	// if (eventFire) { index = 0; len = 5; }
+	
+	for (i=index; i<len; i++) {
+		// create 5 more elements
+    if (i >= 5) {
+    	display.innerHTML += `<div class="clubResult">
+		    											<h2>Round: ${result[i].round}</h2>
+			    										<h3 class="date">Date: ${result[i].date}</h3>
+			    										<h3>${result[i].team1} <span>${result[i].score.ft[0]} : ${result[i].score.ft[1]}</span> ${result[i].team2}</h3>
+		    										</div>`
+
+    	// hide loadmore button when all results are shown									 
+    	if (i == result.length-1) {
+      	document.getElementById('load-more').style.display = 'none';
+      	break;
+      }
+    }
+	}
+	index += 5;
+  len += 5;
+}
+
 
 
 
