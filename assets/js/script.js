@@ -11,12 +11,7 @@ var userData = [
 	}
 ]
 
-// add event listerner on form and pass login()
-var form = document.querySelector('form');
-form.addEventListener('submit', function(e){
-	e.preventDefault();
-	login();
-});
+
 
 var user = document.getElementById('username');
 var pass = document.getElementById('password');
@@ -55,17 +50,31 @@ if (window.location.pathname != '/C:/Users/Kirtiraj/Desktop/PRDXN%20training/Jav
 		}
 		else{
 	    //show validation message
-	    alert('Already Logged In!');
+	    alert('Login Successful!');
 		}
 	}
 
-}
-
-// logout
+	// logout
 	var logout = document.getElementById('logout');
 	logout.addEventListener('click', function(){
-		localStorage.clear();
+		if (confirm('Are you sure you want to logout?')) {
+			localStorage.clear();
+			window.location.href = './login.html';
+		} else {
+			return false;
+		}
 	});
+
+} else {
+	// add event listerner on form and pass login()
+	var form = document.querySelector('form');
+	form.addEventListener('submit', function(e){
+		e.preventDefault();
+		login();
+	});
+	
+}
+
 
 // Index End
 
