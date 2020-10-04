@@ -136,7 +136,7 @@ fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2019-
 	for (var k=0; k<matchweek.length; k++){
 		selectClub.innerHTML += '<option value="' + k + '">' + matchweek[k] + '</option>';
 	}
-	
+
 });
 
 // change event on select element
@@ -329,10 +329,29 @@ function onloadmore() {
 // Matchweek Start
 
 var selectMatch = document.getElementById('select-match');
+var md = [];
 
 
+// change event on select element
+selectMatch.addEventListener('change', mshow);
 
+function mshow() {
 
+	// clear the array before pushing object into it
+	mainresult = [];
+
+	// filter by Matchday into [array[array]*10]*38
+	for (var a=0; a<matchweek.length; a++) {
+		var result = [];
+		for (var b=0; b<matches.length; b++) {
+			if (matches[b].round == matchweek[a]) {
+				result.push(matches[b]);
+			}
+		}
+		mainresult.push(result);
+	}
+
+}
 
 
 
