@@ -219,6 +219,22 @@ function show() {
 		}
 	});
 
+	// display is empty
+	if (!display.innerHTML) {
+	// show first 5 match results
+  	for (i=index; i<len; i++) {
+	    display.innerHTML += `<div class="clubResult">
+		    											<h2>Round: ${result[i].round}</h2>
+			    										<h3 class="date">Date: ${result[i].date}</h3>
+			    										<h3>${result[i].team1} <span>${result[i].score.ft[0]} : ${result[i].score.ft[1]}</span> ${result[i].team2}</h3>
+		    										</div>`
+  	}
+ 	} 
+ 	// display is not empty
+ 	else {
+ 		
+ 	}
+
 }
 
 
