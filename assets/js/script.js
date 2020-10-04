@@ -48,7 +48,7 @@ if (window.location.pathname != '/C:/Users/Kirtiraj/Desktop/PRDXN%20training/Jav
 		}
 		else{
 	    //show validation message
-	    alert('Login Successful!');
+	    console.log('Login Successful!');
 		}
 	}
 
