@@ -400,6 +400,11 @@ nav a:hover,
 
 .date { color: darkgray; }
 
+.mscore {
+  font-size: 24px;
+  font-weight: 600;
+}
+
 #load { text-align: center; }
 
 #load-more {
