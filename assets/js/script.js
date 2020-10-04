@@ -38,17 +38,19 @@ function login(){
 	};
 };
 
+// console.log(window.location.pathname)
+
 // Login End
 
 // Index Start
 
-// check for all pages except login page
-if (window.location.pathname != '/login.html') {
+// check user login for all pages except login page
+if (window.location.pathname != '/C:/Users/Kirtiraj/Desktop/PRDXN%20training/Javascript/EPL%20Football/login.html') {
 
 	// check if user logged in
 	for (var i=0; i<userData.length; i++){
 		if (localStorage.getItem(userData[i].username) != userData[i].password){
-	    //redirect to page
+	    //redirect to login page
 	    window.location.href = 'login.html';
 		}
 		else{
