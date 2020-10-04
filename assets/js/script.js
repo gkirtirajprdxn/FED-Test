@@ -11,8 +11,6 @@ var userData = [
 	}
 ]
 
-
-
 var user = document.getElementById('username');
 var pass = document.getElementById('password');
 var error = document.getElementById('errormsg');
@@ -72,9 +70,8 @@ if (window.location.pathname != '/C:/Users/Kirtiraj/Desktop/PRDXN%20training/Jav
 		e.preventDefault();
 		login();
 	});
-	
-}
 
+}
 
 // Index End
 
