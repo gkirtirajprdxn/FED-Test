@@ -81,7 +81,11 @@ var clubs;
 var matches;
 var result = [];
 var selectClub = document.getElementById('select-club');
-
+var index = 0;
+var len = 5;
+var output = document.getElementById('output');
+var display = document.getElementById('display');
+var load = document.getElementById('load');
 
 // fetch club data
 fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2015-16/en.1.clubs.json')
@@ -232,8 +236,36 @@ function show() {
  	} 
  	// display is not empty
  	else {
- 		
+ 			// empty the output div
+   		display.innerHTML = '';
+   		load.innerHTML = '';
+
+   		// if loadmore button event fired reset index, len to its original state
+   		if (eventFire) {
+				index = 0;
+				len = 5;
+			}
+   		for (i=index; i<len; i++) {
+	    display.innerHTML += `<div class="clubResult">
+		    											<h2>Round: ${result[i].round}</h2>
+			    										<h3 class="date">Date: ${result[i].date}</h3>
+			    										<h3>${result[i].team1} <span>${result[i].score.ft[0]} : ${result[i].score.ft[1]}</span> ${result[i].team2}</h3>
+		    										</div>`
+	    }
  	}
+
+ 	// create load more button
+  var btn = document.createElement("BUTTON"); 
+	btn.id = 'load-more';
+	btn.innerHTML = 'Load More';
+
+	// click event on load more button
+	btn.addEventListener('click', function(e) {
+    if(e.target && e.target.id == 'load-more') {
+      onloadmore();
+		}
+	});
+	document.getElementById('load').appendChild(btn);
 
 }
 
