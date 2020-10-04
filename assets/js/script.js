@@ -42,16 +42,21 @@ function login(){
 
 // Index Start
 
-// check if user logged in
-for (var i=0; i<userData.length; i++){
-	if (localStorage.getItem(userData[i].username) != userData[i].password){
-    //redirect to page
-    window.location.href = 'loginfootball.html';
+// check for all pages except login page
+if (window.location.pathname != '/loginfootball.html') {
+
+	// check if user logged in
+	for (var i=0; i<userData.length; i++){
+		if (localStorage.getItem(userData[i].username) != userData[i].password){
+	    //redirect to page
+	    window.location.href = 'loginfootball.html';
+		}
+		else{
+	    //show validation message
+	    alert('Already Logged In!');
+		}
 	}
-	else{
-    //show validation message
-    alert('Already Logged In!');
-	}
+
 }
 
 
