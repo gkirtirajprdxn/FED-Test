@@ -231,7 +231,7 @@ function show() {
 	    display.innerHTML += `<div class="clubResult">
 		    											<h2>Round: ${result[i].round}</h2>
 			    										<h3 class="date">Date: ${result[i].date}</h3>
-			    										<h3>${result[i].team1} <span>${result[i].score.ft[0]} : ${result[i].score.ft[1]}</span> ${result[i].team2}</h3>
+			    										<h3 class="mscore">${result[i].team1} <span>${result[i].score.ft[0]} : ${result[i].score.ft[1]}</span> ${result[i].team2}</h3>
 		    										</div>`
   	}
  	} 
@@ -250,7 +250,7 @@ function show() {
 	    display.innerHTML += `<div class="clubResult">
 		    											<h2>Round: ${result[i].round}</h2>
 			    										<h3 class="date">Date: ${result[i].date}</h3>
-			    										<h3>${result[i].team1} <span>${result[i].score.ft[0]} : ${result[i].score.ft[1]}</span> ${result[i].team2}</h3>
+			    										<h3 class="mscore">${result[i].team1} <span>${result[i].score.ft[0]} : ${result[i].score.ft[1]}</span> ${result[i].team2}</h3>
 		    										</div>`
 	    }
  	}
@@ -281,7 +281,7 @@ function onloadmore() {
     	display.innerHTML += `<div class="clubResult">
 		    											<h2>Round: ${result[i].round}</h2>
 			    										<h3 class="date">Date: ${result[i].date}</h3>
-			    										<h3>${result[i].team1} <span>${result[i].score.ft[0]} : ${result[i].score.ft[1]}</span> ${result[i].team2}</h3>
+			    										<h3 class="mscore">${result[i].team1} <span>${result[i].score.ft[0]} : ${result[i].score.ft[1]}</span> ${result[i].team2}</h3>
 		    										</div>`
 
     	// hide loadmore button when all results are shown									 
