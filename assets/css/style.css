@@ -455,7 +455,8 @@ nav a:hover,
   margin: 15px 0;
   display: inline-block;
   color: #dd1515;
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .result {
