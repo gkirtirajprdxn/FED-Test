@@ -432,15 +432,30 @@ nav a:hover,
 
 #mdisplay h1 {
   width: 75%;
-  background: #dd1515;
   padding: 15px;
-  color: #fff;
   margin: 0 auto;
+  background: #dd1515;
+  color: #fff;
 }
 
 .result h3 {
   padding: 20px 0;
   color: #363636;
+}
+
+.score a {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.score h4 {
+  padding: 0 50px;
+  margin: 15px 0;
+  display: inline-block;
+  color: #dd1515;
+  font-size: 24px;
 }
 
 /* Matchweek End */
