@@ -353,6 +353,35 @@ nav a:hover,
 
 /* Info Section End */
 
+/* Club List Start */
+#select-club {
+  max-width: 300px;
+  width: 1000px;
+  padding: 15px;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+  background: #3B013E;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.24) 0px 5px 5px 0px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+#output {
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
+}
+
+#display {
+  margin: 0 auto;
+}
+
+/* Club List End */
+
 /* Footer Start */
 
 /* Footer */
