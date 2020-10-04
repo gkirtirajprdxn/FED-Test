@@ -388,6 +388,7 @@ nav a:hover,
 #display,
 #mdisplay {
   margin: 0 auto;
+  text-align: center;
 }
 
 .clubResult {
