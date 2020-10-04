@@ -330,7 +330,8 @@ function onloadmore() {
 
 var selectMatch = document.getElementById('select-match');
 var md = [];
-
+var moutput = document.getElementById('moutput');
+var mdisplay = document.getElementById('mdisplay');
 
 // change event on select element
 selectMatch.addEventListener('change', mshow);
@@ -342,16 +343,41 @@ function mshow() {
 
 	// filter by Matchday into [array[array]*10]*38
 	for (var a=0; a<matchweek.length; a++) {
-		var result = [];
+		var mresult = [];
 		for (var b=0; b<matches.length; b++) {
 			if (matches[b].round == matchweek[a]) {
-				result.push(matches[b]);
+				mresult.push(matches[b]);
 			}
 		}
-		mainresult.push(result);
+		mainresult.push(mresult);
 	}
 
+	// clear the array before pushing object into it
+	md = [];
+
+	// Matchday result array*10
+	for (var c=0; c<mainresult.length; c++) {
+		if (selectMatch.value == c) {
+			md.push(mainresult[c]);
+			// console.log(md) // matchday results *10
+
+			mdisplay.innerHTML = `<h1>${md[0][0].round}</h1>`;
+
+			md[0].forEach(function(m){
+				mdisplay.innerHTML += `<div class="result">
+				    										<h3>Date: ${m.date}</h3>
+				    										<div class="score">
+				    											<a href="clublist.html/?clubName=${m.team1.replace(/ /g, "")}">${m.team1}</a> 
+				    											<h4>${m.score.ft[0]} : ${m.score.ft[1]}</h4> 
+				    											<a href="clublist.html/?clubName=${m.team2.replace(/ /g, "")}">${m.team2}</a>
+				    										</div> </br>
+				    										</br>
+			    										</div>`;
+			})
+		}
+	}
 }
+
 
 
 
