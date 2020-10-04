@@ -79,6 +79,9 @@ if (window.location.pathname != '/C:/Users/Kirtiraj/Desktop/PRDXN%20training/Jav
 
 var clubs;
 var matches;
+var result = [];
+var selectClub = document.getElementById('select-club');
+
 
 // fetch club data
 fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2015-16/en.1.clubs.json')
@@ -102,7 +105,121 @@ fetch('https://raw.githubusercontent.com/openfootball/football.json/master/2019-
 	matches = data.matches;
 });
 
+// change event on select element
+selectClub.addEventListener('change', show);
 
+// show function to display 5 results of match
+function show() {
+
+	// clear the array before pushing object into it
+	result = [];
+
+	matches.forEach(function (match) {
+
+		// loop through the matches array and push the matched object(match) into result array
+		if (selectClub.value == "AVL") {
+			if((match.team1 == 'Aston Villa FC') || (match.team2 == 'Aston Villa FC')) {
+				result.push(match)
+			} 
+		}
+		if (selectClub.value == "WHU") {
+			if((match.team1 == 'West Ham United FC') || (match.team2 == 'West Ham United FC')) {
+				result.push(match)
+			} 
+		}
+		if (selectClub.value == "STK") {
+			if((match.team1 == 'Stoke City FC') || (match.team2 == 'Stoke City FC')) {
+				result.push(match)
+			} else { display.innerHTML = 'No Such Records!' }
+		}
+		if (selectClub.value == "SUN") {
+			if((match.team1 == 'Sunderland AFC') || (match.team2 == 'Sunderland AFC')) {
+				result.push(match)
+			} else { display.innerHTML = 'No Such Records!' }
+		}
+		if (selectClub.value == "EVE") {
+			if((match.team1 == 'Everton FC') || (match.team2 == 'Everton FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "TOT") {
+			if((match.team1 == 'Tottenham Hotspur FC') || (match.team2 == 'Tottenham Hotspur FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "MCI") {
+			if((match.team1 == 'Manchester City FC') || (match.team2 == 'Manchester City FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "CHE") {
+			if((match.team1 == 'Chelsea FC') || (match.team2 == 'Chelsea FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "WBA") {
+			if((match.team1 == 'West Bromwich Albion FC') || (match.team2 == 'West Bromwich Albion FC')) {
+				result.push(match)
+			} else { display.innerHTML = 'No Such Records!' }
+		}
+		if (selectClub.value == "LIV") {
+			if((match.team1 == 'Liverpool FC') || (match.team2 == 'Liverpool FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "ARS") {
+			if((match.team1 == 'Arsenal FC') || (match.team2 == 'Arsenal FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "MUN") {
+			if((match.team1 == 'Manchester United FC') || (match.team2 == 'Manchester United FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "NEW") {
+			if((match.team1 == 'Newcastle United FC') || (match.team2 == 'Newcastle United FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "NOR") {
+			if((match.team1 == 'Norwich City FC') || (match.team2 == 'Norwich City FC')) {
+				result.push(match)
+			} 
+		}
+		if (selectClub.value == "WAT") {
+			if((match.team1 == 'Watford FC') || (match.team2 == 'Watford FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "SWA") {
+			if((match.team1 == 'Swansea City FC') || (match.team2 == 'Swansea City FC')) {
+				result.push(match)
+			} 
+		}
+		if (selectClub.value == "CRY") {
+			if((match.team1 == 'Crystal Palace FC') || (match.team2 == 'Crystal Palace FC')) {
+				result.push(match)
+			} 
+		}
+		if (selectClub.value == "LEI") {
+			if((match.team1 == 'Leicester City FC') || (match.team2 == 'Leicester City FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "SOU") {
+			if((match.team1 == 'Southampton FC') || (match.team2 == 'Southampton FC')) {
+				result.push(match)
+			}
+		}
+		if (selectClub.value == "BOU") {
+			if((match.team1 == 'AFC Bournemouth') || (match.team2 == 'AFC Bournemouth')) {
+				result.push(match)
+			}
+		}
+	});
+
+}
 
 
 
