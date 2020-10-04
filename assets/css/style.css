@@ -354,13 +354,15 @@ nav a:hover,
 /* Info Section End */
 
 /* Club List Start */
-.clubs {
+.clubs,
+.matches {
   width: 100%;
   padding: 4% 0px;
   margin: auto;
 }
 
-#select-club {
+#select-club,
+#select-match {
   max-width: 300px;
   width: 1000px;
   padding: 15px;
@@ -376,13 +378,15 @@ nav a:hover,
   text-align: center;
 }
 
-#output {
+#output,
+#moutput {
   margin: 0 auto;
   display: block;
   font-size: 20px;
 }
 
-#display {
+#display,
+#mdisplay {
   margin: 0 auto;
 }
 
