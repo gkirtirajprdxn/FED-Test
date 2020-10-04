@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en"> 
+
+<head>
+ 
+  <meta charset="utf-8">
+
+  <title>Matchweek</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+  <meta name="description" lang="en" content="">
+  
+  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+  <meta name="keywords" lang="en" content="">
+  
+  <!-- View-port Basics: http://mzl.la/VYREaP -->
+  <!-- This meta tag is used for mobile device to display the page without any zooming,
+       so how much the device is able to fit on the screen is what's shown initially. 
+       Remove comments from this tag, when you want to apply media queries to the website. -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+  
+  <!-- To adhear no-cache for Chrome -->
+  <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-store, no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+
+  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
+  <!--[if lt IE 9]>  
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+  <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="cf">
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#" title="EPL">
+          <figure><img src="assets/img/epl.png" alt="epl-logo"></figure>
+        </a>
+      </div>
+      <!-- navigation -->
+      <nav>
+        <ul>
+          <li><a href="./index.html" title="HOME">Home</a></li>
+          <li><a href="./clublist.html" title="Club List" class="active">Club List</a></li>
+          <li><a href="./matchweek.html" title="Matchweek">Matchweek</a></li>
+          <li><a href="#" title="logout" id="logout">Logout</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="matches">
+    <!-- select club -->
+    <select name="matchdays" id="select-match">
+      <option>-Select Matchday-</option>
+    </select>
+  </div>
+
+  <!-- displays result -->
+  <div id="moutput">
+    <div id="mdisplay">
+      
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrapper">
+      <div class="ftop">
+        <!-- Footer Logo -->
+        <div class="flogo">
+          <img src="assets/img/flogo1.jpg" alt="f-logo">
+        </div>
+        <!-- Footer nav -->
+        <div class="navs">
+          <!-- nav links -->
+          <div class="nav">
+            <ul>
+              <li><a href="./index.html" title="Home">Home</a></li>
+              <li><a href="./clublist.html" title="Club List">Club List</a></li>
+              <li><a href="./matchweek.html" title="Matchweek">Matchweek</a></li>
+            </ul>
+          </div>
+          <!-- social links -->
+          <div class="social">
+            <a href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" title="Pinterest"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- foot -->
+      <div class="foot">
+        <p>&copy; English Premier League 2020</p>
+        <!-- policy -->
+        <div class="policy">
+          <a href="#" title="Privacy policies">Privacy Policies</a>
+          <a href="#" title="Terms & Conditions">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="assets/vendor/jquery-1.8.3.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
