@@ -61,6 +61,14 @@ if (window.location.pathname != '/C:/Users/Kirtiraj/Desktop/PRDXN%20training/Jav
 
 }
 
+// logout
+	var logout = document.getElementById('logout');
+	logout.addEventListener('click', function(){
+		localStorage.clear();
+	});
+
+// Index End
+
 
 
 
