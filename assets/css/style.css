@@ -416,6 +416,11 @@ nav a:hover,
   font-size: 18px;
 }
 
+#load-more:hover {
+  background: #aaa;
+  color: #35003b;
+}
+
 /* Club List End */
 
 /* Footer Start */
