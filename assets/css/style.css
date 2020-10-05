@@ -298,6 +298,34 @@ nav a:hover,
   color: #3B013E;
 }
 
+#check{
+  display: none;
+}
+
+#cross{
+  display: none;
+}
+
+.checkbtn{
+  padding: 5px;
+  display: none;
+  float: right;
+  position: relative;
+  color: #6C6E70;
+  cursor: pointer;
+  font-size: 30px;
+  user-select: none;
+}
+
+.check:checked ~ .checkbtn #cross{
+  display: block;
+  position: fixed;
+  right: 5px;
+}
+.check:checked ~ .checkbtn #bars{
+  display: none;
+}
+
 /* Header End */
 
 /* Banner Start */
