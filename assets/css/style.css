@@ -689,12 +689,36 @@ footer a {
     transition: max-height .2s ease-out;
   }
 
-  /*.check:checked ~ nav li{
-    display: block;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .main-text h2 { font-size: 32px; }
+
+  .main-text p,
+  .foot p,
+  .policy a { font-size: 14px; }
+
+  .sul li { width: calc(50% - 5px); }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+  .main-text h2 { font-size: 32px; }
+
+  .main-text p,
+  .foot p,
+  .policy a { font-size: 10px; }
+
+  .flogo, .navs {
+    width: 100%;
   }
 
-  .check:checked ~ nav a{
-    display: block;
-  }*/
+  .navs { padding: 30px 0; }
 
+  .score a { font-size: 16px; }
+
+  .mscore { font-size: 14px; }
 }
