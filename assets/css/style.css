@@ -356,6 +356,20 @@ nav a:hover,
 
 /* Info Section End */
 
+/* Soccer Section Start */
+
+.soccer { padding: 30px 0; }
+
+.soccer h2 {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px solid #3B013E;
+  color: #3B013E;
+  font-size: 30px;
+}
+
+/* Soccer End*/
+
 /* Club List Start */
 .clubs,
 .matches {
