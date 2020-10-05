@@ -384,13 +384,13 @@ nav a:hover,
   position: relative;
 }
 
-.bg1 { background-image: url(../img/soccer-1.jpg); }
+.bg1 { background-image: url(img/soccer-1.jpg); }
 
-.bg2 { background-image: url(../img/soccer-2.jpg); }
+.bg2 { background-image: url(img/soccer-2.jpg); }
 
-.bg3 { background-image: url(../img/soccer-3.jpg); }
+.bg3 { background-image: url(img/soccer-3.jpg); }
 
-.bg4 { background-image: url(../img/soccer-4.jpg); }
+.bg4 { background-image: url(img/soccer-4.jpg); }
 
 /* Soccer End*/
 
