@@ -392,6 +392,41 @@ nav a:hover,
 
 .bg4 { background-image: url(../img/soccer-4.jpg); }
 
+.set-bg {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.soccer-item .si-tag {
+  padding: 3px 9px;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #dd1515;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.title {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+.title h5 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
 /* Soccer End*/
 
 /* Club List Start */
