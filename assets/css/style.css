@@ -484,7 +484,7 @@ nav a:hover,
 /* Footer */
 footer { 
   margin-top: 8%;
-  background-color: #3B013E; 
+  background: url(../img/hero-2.jpg) no-repeat; 
 }
 
 footer li { padding: 10px 0; }
@@ -506,7 +506,7 @@ footer a {
 }
 
 .flogo img {
-  width: 100%;
+  width: 75%;
 }
 
 .navs a:hover {
