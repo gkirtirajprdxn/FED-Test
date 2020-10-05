@@ -505,6 +505,10 @@ footer a {
   vertical-align: top;
 }
 
+.flogo img {
+  width: 100%;
+}
+
 .navs a:hover {
   padding: 10px;
   background: #fff;
