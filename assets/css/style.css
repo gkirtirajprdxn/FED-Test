@@ -358,7 +358,10 @@ nav a:hover,
 
 /* Soccer Section Start */
 
-.soccer { padding: 30px 0; }
+.soccer { 
+  padding: 80px 0; 
+  background: #eee;
+}
 
 .soccer h2 {
   width: 100%;
@@ -556,7 +559,6 @@ nav a:hover,
 
 /* Footer */
 footer { 
-  margin-top: 8%;
   background: url(../img/hero-2.jpg) no-repeat; 
 }
 
